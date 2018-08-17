@@ -254,6 +254,13 @@ PY_EXTMOD_O_BASENAME = \
 	extmod/uos_dupterm.o \
 	lib/embed/abort_.o \
 	lib/utils/printf.o \
+	extmod/modspeech.o \
+	extmod/speech/debug.o \
+	extmod/speech/createtransitions.o \
+	extmod/speech/reciter.o \
+	extmod/speech/sam.o \
+	extmod/speech/processframes.o \
+	extmod/speech/render.o \
 
 # prepend the build destination prefix to the py object files
 PY_CORE_O = $(addprefix $(BUILD)/, $(PY_CORE_O_BASENAME))

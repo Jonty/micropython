@@ -217,6 +217,9 @@ STATIC const mp_rom_map_elem_t mp_builtin_module_table[] = {
 #if MICROPY_PY_BTREE
     { MP_ROM_QSTR(MP_QSTR_btree), MP_ROM_PTR(&mp_module_btree) },
 #endif
+#if MICROPY_PY_SPEECH
+    { MP_ROM_QSTR(MP_QSTR_speech), MP_ROM_PTR(&mp_module_speech) },
+#endif
 
     // extra builtin modules as defined by a port
     MICROPY_PORT_BUILTIN_MODULES
